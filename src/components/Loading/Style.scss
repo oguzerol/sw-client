@@ -1,0 +1,72 @@
+.loading {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 300px;
+  text-align: center;
+
+  .spinner {
+    animation: spinner 0.5s;
+    display: flex;
+    svg {
+      path {
+        fill: #868686;
+      }
+      path:nth-of-type(1) {
+        animation: blade 1s infinite linear;
+      }
+      path:nth-of-type(2) {
+        animation: blade 1s -0.083s infinite linear;
+      }
+      path:nth-of-type(3) {
+        animation: blade 1s -0.166s infinite linear;
+      }
+      path:nth-of-type(4) {
+        animation: blade 1s -0.249s infinite linear;
+      }
+      path:nth-of-type(5) {
+        animation: blade 1s -0.332s infinite linear;
+      }
+      path:nth-of-type(6) {
+        animation: blade 1s -0.415s infinite linear;
+      }
+      path:nth-of-type(7) {
+        animation: blade 1s -0.498s infinite linear;
+      }
+      path:nth-of-type(8) {
+        animation: blade 1s -0.581s infinite linear;
+      }
+      path:nth-of-type(9) {
+        animation: blade 1s -0.664s infinite linear;
+      }
+      path:nth-of-type(10) {
+        animation: blade 1s -0.747s infinite linear;
+      }
+      path:nth-of-type(11) {
+        animation: blade 1s -0.83s infinite linear;
+      }
+      path:nth-of-type(12) {
+        animation: blade 1s -0.913s infinite linear;
+      }
+    }
+  }
+}
+
+@keyframes blade {
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+
+@keyframes spinner {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,13 @@
+.basic-table {
+  thead tr {
+    white-space: nowrap;
+  }
+  &.table th {
+    vertical-align: middle;
+  }
+}
+.nothing-found {
+  text-align: center;
+  border: 1px solid #dee2e6;
+  padding: 50px 0;
+}
